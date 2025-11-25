@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background: #101010;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.05);
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+header .logo {
+    display: flex;
+    gap: 10px;
+}
+header .logo span {
+    background: #f9a02b;
+    padding: 0 10px;
+    color: #101010;
+    border-radius: 8px;
+    font-size: 28px;
+    margin-top: auto;
+}
+header .auth-btn {
+    display: flex;
+    gap: 10px;
+}
+header .auth-btn button {
+    padding: 10px 20px;
+    border: solid 2px #2e2e2e;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+header .auth-btn .login-btn {
+    background: #212121;
+}
+header .auth-btn .login-btn:hover {
+    background: #2e2e2e;
+}
+header .auth-btn .signup-btn {
+    background: #f9a02b;
+    color: #101010;
+}
+header .auth-btn .signup-btn:hover {
+    background: #ff9100;
+}
+.pattern {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    animation: pattern 5s infinite;
+    left: 0;
+    top: 0;
+}
+@keyframes pattern {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+main {
+    min-height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+section {
+    margin-top: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.crypto-img {
+    width: 350px;
+}
+.greeting {
+    font-size: 60px;
+    line-height: 110%;
+    width: 40%;
+}
+.feature svg{
+    width: 30px;
+    min-width: 30px;
+    margin-top: auto;
+    margin-left: 15px;
+}
+.feature {
+    background: linear-gradient(to right, #2e2e2e, #2e2e2e);
+    padding: 20px;
+    border-radius: 16px;
+    border: solid 2px #2e2e2e;
+    display: flex;
+    width: 60%;
+}
+.feature h4 {
+    background: #3ed6c7;
+    width: fit-content;
+    padding: 5px 10px;
+    color: #101010;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+.faeture p {
+    color: #bebebe;
+    font-size: 18px;
+}
+.info {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.download-app {
+    width: 40%;
+}
+.download-app p {
+    color: #bebebe;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.download-app button {
+    display: flex;
+    background: #f9a02b;
+    border: solid 2px #2e2e2e;
+    padding: 12px 20px;
+    border-radius: 10px;
+    gap: 10px;
+    color: #101010;
+    font-weight: 700;
+    font-size: 18px;
+    white-space: nowrap;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.download-app button:hover {
+    background: #ff9100;
+}
+.download-app button svg {
+    width: 30px;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    background: #212121;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 768px) {
+    .title{
+        flex-direction: column;
+        align-items: start;
+    }
+    .greeting {
+        width: 100%;
+        font-size: 40px;
+    }
+    .crypto-img {
+        width: 250px;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .faeture {
+        width: 100%;
+    }
+    .download-app {
+        width: 100%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+    }
+    footer span {
+        text-align: center;
+    }
+}
+#menu {
+    display: none;
+}
+.menu {
+    display: none;
+}
+@media (max-width: 520px) {
+    .auth-btn {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        flex-direction: column;
+        background: #101010;
+        padding: 20px;
+        border: solid 2px #2e2e2e;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .menu {
+        width: 60px;
+        height: 55px;
+        background: #212121;
+        border: solid 2px #2e2e2e;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .menu svg {
+        width: 40px;
+    }
+    #menu:checked + .auth-btn {
+        opacity: 1;
+        right: 30px;
+    }
+}

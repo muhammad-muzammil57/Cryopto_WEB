@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="logo">CRYPTO <span>PRO</span></h1>
+        <label for="menu" class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </label>
+        <input type="checkbox"  id="menu">
+        <div class="auth-btn">
+            <button class="login-btn">LOGIN</button>
+            <button class="signup-btn">SIGN UP</button>
+
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <img src="assets/pattern.svg" alt="" class="pattern">
+        <section>
+            <div class="title">
+                <h1 class="greeting">
+                    <span>TRANSFORM</span>
+                    <span>YOUR</span>
+                    <span>TRADING</span>
+                    <span>EXPERIENCE</span>
+                </h1>
+                <img src="assets/crypto.png" alt="" class="crypto-img">
+            </div>
+            <div class="info">
+                <div class="feature">
+                    <div>
+                        <h4>NEW FEATURE</h4>
+                        <h2>ADVANCED CHARTING TOOL</h2>
+                        <p>Enhance your trading experience with powerful data visualization</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#bebebe" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+
+                </div>
+                <div class="download-app">
+                    <p>CryptoPro is your ultimate companion for tracking,analyzing, and manging your cryptocurrency
+                        portfolio</p>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="#101010" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                        DOWNLOAD APP
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span>
+                <img src="assets/bitget.svg" alt="">
+            </span>
+            <span>
+                <img src="assets/trezor.svg" alt="">
+            </span>
+            <span>
+                <img src="assets/ledger.svg" alt="">
+            </span>
+            <span>
+                <img src="assets/bybit.svg" alt="">
+            </span>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal({
+            delay: 250,
+        })
+ScrollReveal().reveal('.greeting span', {
+    interval:600,
+    duration:3000,
+});
+ScrollReveal().reveal('.crypto-img', {
+    duration:4000,
+    origin: 'bottom',
+    distance: '100px'
+});
+ScrollReveal().reveal('.feature', {
+    duration:5000,
+});
+ScrollReveal().reveal('.download-app', {
+    duration:5000,
+});
+ScrollReveal().reveal('footer span', {
+    duration:6000,
+    interval: 600
+});
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
